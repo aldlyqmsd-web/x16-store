@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="description" content="X16 STORE — متجر بوتات ديسكورد احترافية لإدارة سيرفرك وتطويره.">
+  <title>X16 STORE | بوتات ديسكورد</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="X16 STORE الصفحة الرئيسية">
+      <span class="brand-mark">X<span>16</span></span>
+      <span class="brand-copy"><b>X16 STORE</b><small>DISCORD BOTS MARKET</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="nav-link active">الرئيسية</a>
+      <a href="#products" class="nav-link">البوتات</a>
+      <a href="#why-us" class="nav-link">مميزاتنا</a>
+      <a href="#faq" class="nav-link">الأسئلة الشائعة</a>
+    </nav>
+    <div class="header-actions">
+      <button class="cart-button" id="openCart" aria-label="فتح قائمة الطلبات"><span>طلباتي</span><b id="cartCount">0</b></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة"><i></i><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse-dot"></span> حلول ذكية لسيرفر الديسكورد</div>
+        <h1>طوّر سيرفرك.<br><span>خلّ الإدارة علينا.</span></h1>
+        <p class="hero-desc">بوتات ديسكورد مصممة لتنظيم سيرفرك، تسهيل الإدارة، وتحسين تجربة الأعضاء — اختر البوت المناسب واطلبه بسهولة.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#products">استكشف البوتات <span>←</span></a>
+          <a class="secondary-button" href="#why-us">ليش X16؟</a>
+        </div>
+        <div class="hero-proof"><div class="proof-avatars"><span>16</span><span>DC</span><span>BOT</span></div><p><b>كل أدوات سيرفرك بمكان واحد</b><small>إدارة • حماية • تذاكر • تفاعل</small></p></div>
+      </div>
+      <div class="hero-art" aria-label="شعار X16 Store">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-emblem"><span class="emblem-x">X16</span><span class="emblem-line"></span><span class="emblem-store">STORE</span></div>
+        <div class="floating-chip chip-top"><span class="chip-icon">⌘</span><span><b>Discord Bots</b><small>أدوات متكاملة</small></span></div>
+        <div class="floating-chip chip-bottom"><span class="online-dot"></span><span><b>جاهز للتخصيص</b><small>حسب احتياج سيرفرك</small></span></div>
+      </div>
+      <div class="hero-scroll"><span></span> اكتشف المنتجات</div>
+    </section>
+
+    <section class="stats-strip" aria-label="مميزات المتجر">
+      <div><b>01</b><span>إعدادات قابلة للتخصيص</span></div>
+      <div><b>02</b><span>أوامر سلاش سهلة</span></div>
+      <div><b>03</b><span>دعم وإرشادات تشغيل</span></div>
+      <div><b>04</b><span>حلول لسيرفرك</span></div>
+    </section>
+
+    <section class="products-section section-wrap" id="products">
+      <div class="section-heading">
+        <div><div class="section-kicker">كتالوج المتجر <span></span></div><h2>اختر البوت <em>المناسب</em></h2><p>تصفح المنتجات، ابحث عن احتياجك، وأضف البوت إلى قائمة طلباتك.</p></div>
+        <div class="catalog-tools"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن بوت..." autocomplete="off"></label><button class="sort-button" id="sortButton">كل المنتجات <span>⌄</span></button></div>
+      </div>
+      <div class="filter-row" id="filters" aria-label="تصنيفات المنتجات">
+        <button class="filter-chip selected" data-filter="all">الكل <span>10</span></button>
+        <button class="filter-chip" data-filter="management">الإدارة والتنظيم</button>
+        <button class="filter-chip" data-filter="security">الحماية واللوقات</button>
+        <button class="filter-chip" data-filter="support">التذاكر والتقديم</button>
+        <button class="filter-chip" data-filter="engagement">التفاعل والنقاط</button>
+        <button class="filter-chip" data-filter="utility">أدوات أخرى</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><b>ما لقينا نتائج</b><p>جرّب كلمة ثانية أو اختر تصنيفًا مختلفًا.</p></div>
+    </section>
+
+    <section class="why-section" id="why-us">
+      <div class="section-wrap why-inner">
+        <div class="why-copy"><div class="section-kicker">ليش تختارنا؟ <span></span></div><h2>مو مجرد بوتات،<br><em>حلول تريحك.</em></h2><p>نركز على الأدوات العملية التي تختصر وقت الإدارة وتخلي سيرفرك أكثر ترتيبًا. اختر المنتج، وضّح احتياجك، ونرتب لك تفاصيل الطلب.</p><a class="text-link" href="#products">شاهد المنتجات <span>←</span></a></div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon">⚙</div><h3>قابل للتخصيص</h3><p>إعدادات وأسماء وقنوات تناسب طريقة إدارة سيرفرك.</p></article>
+          <article class="feature-card"><div class="feature-icon">⌘</div><h3>سهولة الاستخدام</h3><p>أوامر سلاش وواجهات واضحة للأعضاء والإدارة.</p></article>
+          <article class="feature-card"><div class="feature-icon">◈</div><h3>تنظيم أفضل</h3><p>سجلات وإشعارات تساعدك تتابع الأحداث والطلبات.</p></article>
+          <article class="feature-card"><div class="feature-icon">✦</div><h3>مساعدة بالتشغيل</h3><p>تعليمات إعداد وتشغيل ضمن تفاصيل كل منتج.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section section-wrap" id="faq">
+      <div class="section-heading faq-heading"><div><div class="section-kicker">عندك سؤال؟ <span></span></div><h2>أسئلة <em>شائعة</em></h2></div></div>
+      <div class="faq-list">
+        <details><summary>كيف أطلب بوت؟ <span>＋</span></summary><p>أضف البوت إلى قائمة طلباتك، ثم أكد الاسم وبيانات التواصل. سيصل الطلب إلى روم الطلبات في ديسكورد، وبعدها يظهر لك رابط دعوة السيرفر ورسالة بأن طلبك قيد المراجعة.</p></details>
+        <details><summary>هل أقدر أعدل إعدادات البوت؟ <span>＋</span></summary><p>تختلف خيارات التخصيص حسب المنتج. راجع وصف كل بوت، واكتب متطلباتك في ملاحظات الطلب.</p></details>
+        <details><summary>هل الأسعار ثابتة؟ <span>＋</span></summary><p>الأسعار قابلة للتعديل داخل ملف app.js. المنتجات المعروضة حاليًا تستخدم عبارة «اطلب السعر».</p></details>
+        <details><summary>هل الدفع الإلكتروني مفعّل؟ <span>＋</span></summary><p>لا. هذه نسخة واجهة متجر وطلبات. ربط الدفع يحتاج بوابة دفع وحساب تاجر معتمد وإعدادًا آمنًا على الخادم.</p></details>
+      </div>
+    </section>
+
+    <section class="cta-section section-wrap"><div class="cta-box"><div><div class="section-kicker">جاهز تبدأ؟ <span></span></div><h2>خلّ سيرفرك <em>أقوى مع X16</em></h2><p>اختر الأدوات اللي تحتاجها وابدأ طلبك اليوم.</p></div><a href="#products" class="primary-button">تصفح البوتات <span>←</span></a><div class="cta-watermark">X16</div></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">X<span>16</span></span><span class="brand-copy"><b>X16 STORE</b><small>DISCORD BOTS MARKET</small></span></a><p>متجر بوتات ديسكورد وحلول إدارة السيرفرات.</p><span class="copyright">© <span id="year"></span> X16 STORE. جميع الحقوق محفوظة.</span></footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="قائمة الطلبات" aria-hidden="true">
+    <div class="drawer-head"><div><span class="drawer-kicker">قائمة المشتريات</span><h3>طلباتك <span id="drawerCount">0</span></h3></div><button class="icon-button" id="closeCart" aria-label="إغلاق">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom"><label for="orderNotes">ملاحظات على الطلب <small>(اختياري)</small></label><textarea id="orderNotes" rows="3" placeholder="اكتب التخصيصات أو التفاصيل المطلوبة..."></textarea><button class="primary-button full-button" id="sendOrder">متابعة وتأكيد الطلب <span>←</span></button><p class="drawer-note">بعد التأكيد سيصل طلبك إلى فريق المتجر لمراجعته.</p></div>
+  </aside>
+
+  <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+    <div class="checkout-backdrop" data-close-checkout></div>
+    <section class="checkout-dialog" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <button class="icon-button checkout-close" id="closeCheckout" aria-label="إغلاق">×</button>
+      <div class="checkout-form-view" id="checkoutFormView">
+        <div class="section-kicker">تأكيد الطلب <span></span></div>
+        <h2 id="checkoutTitle">باقي خطوة واحدة</h2>
+        <p class="checkout-intro">أدخل بيانات التواصل، ثم أكد الطلب ليصل إلى فريق X16 STORE.</p>
+        <form id="checkoutForm">
+          <label class="checkout-field">اسمك<input id="customerName" name="customerName" required maxlength="70" autocomplete="name" placeholder="اكتب اسمك"></label>
+          <label class="checkout-field">اسمك في ديسكورد أو User ID<input id="discordContact" name="discordContact" required maxlength="80" placeholder="مثال: username أو Discord ID"></label>
+          <div class="checkout-order-preview" id="checkoutOrderPreview"></div>
+          <p class="checkout-error" id="checkoutError" role="alert" hidden></p>
+          <button class="primary-button full-button" id="confirmOrder" type="submit">تأكيد وإرسال الطلب <span>←</span></button>
+        </form>
+        <p class="drawer-note">لن يتم خصم أي مبلغ الآن. هذا طلب لمراجعته والتواصل معك بشأنه.</p>
+      </div>
+      <div class="checkout-success-view" id="checkoutSuccessView" hidden>
+        <div class="success-mark">✓</div>
+        <div class="section-kicker">تم استلام طلبك <span></span></div>
+        <h2>شكرًا لطلبك!</h2>
+        <p>تم إرسال طلبك إلى فريق المتجر، وسيتم مراجعته والتواصل معك.</p>
+        <div class="order-reference">رقم الطلب <b id="successOrderId"></b></div>
+        <a class="primary-button full-button invite-button" id="discordInviteLink" href="#" target="_blank" rel="noopener noreferrer">دخول سيرفر الديسكورد <span>↗</span></a>
+        <button class="secondary-button full-button" id="finishCheckout" type="button">إغلاق</button>
+      </div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
