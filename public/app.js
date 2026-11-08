@@ -14,6 +14,7 @@ const STORE_CONFIG = {
     {id:"waiting",name:"Waiting Nickname",category:"utility",categoryName:"أدوات أخرى",icon:"🎧",tag:"ترتيب تلقائي",description:"نظّم قائمة الانتظار الصوتية بترقيم الأعضاء تلقائيًا مع الحفاظ على أسمائهم الأصلية.",features:["ترقيم تلقائي","إعادة ترتيب","اتصال صوتي"],price:"5$"},
     {id:"prayer",name:"Makkah Prayer Bot",category:"utility",categoryName:"أدوات أخرى",icon:"🕌",tag:"تذكير يومي",description:"تنبيهات مواقيت الصلاة بتوقيت مكة، مع نشر الأدعية والأذكار وإمكانية اختبار الرسائل.",features:["الصلوات الخمس","توقيت مكة","أذكار وأدعية"],price:"2$"},
     {id:"broadcast",name:"Broadcast For Room",category:"management",categoryName:"الإدارة والتنظيم",icon:"📢",tag:"الإعلانات",description:"لوحة إرسال إعلانات للأعضاء عبر الرسائل الخاصة مع بنر، معاينة، وتقارير للإرسال.",features:["لوحة BC","بنر PNG","تقرير الإرسال"],price:"4$"},
+    {id:"afk-bot",name:"بوت AFK",category:"utility",categoryName:"أدوات أخرى",icon:"💤",tag:"تنظيم ذكي",description:"بوت AFK لمراقبة الرومات الصوتية وتنظيم الأعضاء غير النشطين تلقائيًا.",features:["مراقبة حتى 20 روم صوتي","تنبيه العضو بعد 15 دقيقة","منح العضو 6 دقائق للرد","نقل العضو تلقائيًا عند عدم الرد","تحديد روم AFK للنقل"],price:"2$"},
   ]
 };
 
