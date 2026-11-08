@@ -13,7 +13,7 @@ const STORE_CONFIG = {
     {id:"attendance",name:"Login & Logout V2",category:"management",categoryName:"الإدارة والتنظيم",icon:"⏱️",tag:"الحضور والانصراف",description:"سجّل دخول وخروج الأعضاء، احسب مجموع الساعات، واعرض المتصدرين مع أدوات تعديل للإدارة.",features:["Login / Logout","Hours","Top 10"],price:"4$"},
     {id:"waiting",name:"Waiting Nickname",category:"utility",categoryName:"أدوات أخرى",icon:"🎧",tag:"ترتيب تلقائي",description:"نظّم قائمة الانتظار الصوتية بترقيم الأعضاء تلقائيًا مع الحفاظ على أسمائهم الأصلية.",features:["ترقيم تلقائي","إعادة ترتيب","اتصال صوتي"],price:"5$"},
     {id:"prayer",name:"Makkah Prayer Bot",category:"utility",categoryName:"أدوات أخرى",icon:"🕌",tag:"تذكير يومي",description:"تنبيهات مواقيت الصلاة بتوقيت مكة، مع نشر الأدعية والأذكار وإمكانية اختبار الرسائل.",features:["الصلوات الخمس","توقيت مكة","أذكار وأدعية"],price:"2$"},
-    {id:"broadcast",name:"Broadcast For Room",category:"management",categoryName:"الإدارة والتنظيم",icon:"📢",tag:"الإعلانات",description:"لوحة إرسال إعلانات للأعضاء عبر الرسائل الخاصة مع بنر، معاينة، وتقارير للإرسال.",features:["لوحة BC","بنر PNG","تقرير الإرسال"],price:"4$"}
+    {id:"broadcast",name:"Broadcast For Room",category:"management",categoryName:"الإدارة والتنظيم",icon:"📢",tag:"الإعلانات",description:"لوحة إرسال إعلانات للأعضاء عبر الرسائل الخاصة مع بنر، معاينة، وتقارير للإرسال.",features:["لوحة BC","بنر PNG","تقرير الإرسال"],price:"4$"},
   ]
 };
 
