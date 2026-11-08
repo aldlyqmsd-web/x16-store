@@ -127,11 +127,19 @@ app.post("/api/orders", orderLimiter, async (req, res) => {
       signal: AbortSignal.timeout(12000)
     });
 
-    if (!discordResponse.ok) {
-      const detail = await discordResponse.text().catch(() => "");
-      console.error("Discord webhook rejected order:", discordResponse.status, detail.slice(0, 500));
-      return res.status(502).json({ error: "تعذر إرسال طلبك إلى ديسكورد حاليًا. حاول مرة أخرى بعد قليل." });
-    }
+ if (!discordResponse.ok) {
+  const detail = await discordResponse.text().catch(() => "");
+
+  console.error("Discord webhook error:", {
+    status: discordResponse.status,
+    detail: detail.slice(0, 1000)
+  });
+
+  return res.status(502).json({
+    error: "فشل إرسال الطلب إلى Discord.",
+    code: discordResponse.status
+  });
+}
 
     return res.status(201).json({
       ok: true,
